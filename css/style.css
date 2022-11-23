@@ -1,0 +1,425 @@
+* {
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.bg-grey {
+  background: #f7f7f7;
+}
+
+/* section > .container {
+  width: 1170px;
+  margin: auto; */
+/* display: block; */
+/* 
+  padding: 30px 50px;
+} */
+
+.banner-image {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+#banner-text {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 20px;
+  color: white;
+}
+/* navigation  */
+
+#nav-bar {
+  width: 100%;
+
+  /* margin-left: 50px; */
+
+  text-align: center;
+  align-items: center;
+}
+.container-user .user {
+  position: relative;
+  display: inline-block;
+  text-transform: uppercase;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 50px;
+
+  border-right: 1px solid #f7f7f7;
+}
+.user-avatar img {
+  border: 5px solid #fff;
+  border-radius: 50%;
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  margin-top: -60px;
+  right: -70px;
+}
+.user:last-child {
+  margin-right: 0;
+}
+.user-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+}
+.user-info {
+  border-left: 2px solid #f7f7f7;
+}
+.user a {
+  text-decoration: none;
+}
+.user p:first-child {
+  display: inline-block;
+  color: #000;
+}
+.user a:active,
+.user a:visited {
+  color: #228be6;
+}
+
+/* thiet lap cho khoi muc tieu nghe nghiep */
+#about {
+  background-color: #f7f7f7;
+  /* position:absolute; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: baseline;
+  width: 100%;
+  margin-left: 50px;
+  margin-top: 0px;
+  line-height: 2;
+}
+#about .section-title {
+  padding-left: 0px;
+  margin-left: 0px;
+}
+#target {
+  background: #f7f7f7;
+  width: 100%;
+  height: auto;
+  padding-left: 50px;
+}
+#target h1 {
+  margin-bottom: 24px;
+}
+#personal-info {
+  flex-wrap: nowrap;
+  background-color: #f1f3f5;
+  width: 100%;
+  height: 100%;
+  padding-left: 50px;
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+#personal-info h1 {
+  margin-bottom: 24px;
+}
+
+.mt-40 li {
+  list-style: none;
+}
+.mt-40 {
+  padding-bottom: 24px;
+}
+.MXH a:active,
+.MXH a:visited {
+  color: #228be6;
+  stroke: #228be6;
+}
+.MXH a:hover {
+  stroke: #228be6;
+}
+
+/* Hoat dong */
+.job-info {
+  position: relative;
+  display: grid;
+  grid-template-columns: 25% 25% 25%;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 10px;
+  row-gap: 15px;
+  column-gap: 30px;
+  justify-content: center;
+  align-content: center;
+  width: auto;
+  width: 100%;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container-info {
+  position: relative;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: auto 1fr;
+
+  border-style: ridge;
+
+  padding: 20px;
+  align-items: baseline;
+  justify-items: flex-start;
+}
+.container-info ul.layout-item {
+  list-style: none;
+  padding-left: 0;
+  line-height: 2;
+}
+.layout-item li {
+  position: relative;
+  padding-left: 20px;
+}
+/* tao list li */
+.layout-item li:before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  border: 3px double #fff;
+  background-color: #228be6;
+  stroke: #228be6;
+  border-radius: 50%;
+  margin-left: -25px;
+  margin-top: 9px;
+}
+.info-ic,
+.info-ic1 {
+  margin-bottom: 40px;
+}
+.info-ic {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+.info-ic2 {
+  grid-column: 1/5;
+  padding-top: 0%;
+}
+.info-ic1 i {
+  color: #adb5bd;
+  font-size: 32px;
+}
+/* điều chỉnh cho phần Sở thích  */
+.ic {
+  display: flex;
+
+  width: 40px;
+  height: 40px;
+  border: 1px solid #74c0fc;
+
+  color: #74c0fc;
+
+  border-radius: 50%;
+  align-items: center;
+  text-align: center;
+}
+/* thiết lập thanh thang điểm cho phần  ngữ */
+.info-math {
+  width: 100vh;
+}
+.info-math .math1 {
+  background: #199cdb;
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+
+  width: 45px;
+}
+.info-math .math2 {
+  background: #199cdb;
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+
+  width: 45px;
+}
+.info-math .math3 {
+  border: 0.5px solid rgb(226, 212, 212);
+  background: #fff;
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+
+  width: 45px;
+}
+/* thiết lập thanh thang điểm cho phần kỹ năng */
+.info-math .mathA {
+  background: #199cdb;
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+
+  width: 45px;
+}
+.info-math .mathB {
+  border: 0.5px solid #199cdb;
+  background: #199cdb;
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+
+  width: 45px;
+}
+.info-math .mathC {
+  border: 0.5px solid #199cdb;
+  background: #199cdb;
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+
+  width: 45px;
+}
+/*  Thiet lap phan chung chi- giai thuong */
+#certificate {
+  position: relative;
+  background-color: #f7f7f7;
+  width: 100%;
+
+  margin-left: 50px;
+  margin-right: 50px;
+  padding-left: 60px;
+}
+#certificate .section-title {
+  padding-left: 0px;
+  margin-left: 50px;
+}
+#certificate .certificate {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  justify-content: flex-start;
+  grid-template-columns: 40% 40%;
+  grid-template-rows: 50% 50%;
+
+  padding-top: 30px;
+  padding-bottom: 150px;
+  padding-left: 30px;
+  row-gap: 50px;
+  column-gap: 100px;
+  margin-bottom: 20px;
+}
+.certificate-A {
+  align-content: space-between;
+  justify-content: space-around;
+  display: flex;
+  grid-column-start: 1;
+  grid-column-end: 1;
+}
+.certificate-B {
+  border-left: 1px solid #d6c08d;
+  display: flex;
+  grid-column-start: 2;
+  grid-column-end: 2;
+  justify-content: space-between;
+  padding-right: 0px;
+  width: max-content;
+  gap: 40px;
+  padding-left: 10px;
+}
+.certificate-C {
+  padding-top: 50px;
+  border-top: 1px solid #d6c08d;
+  height: 300px;
+  display: flex;
+  grid-row: 2/3;
+  grid-column: 1/-1;
+  justify-content: flex-start;
+  padding-left: 20px;
+
+  gap: 40px;
+}
+/* Xay dung phần dự án */
+.container-pro {
+  position: relative;
+  display: grid;
+  width: 100%;
+  grid-template-columns: 26% 26% 26%;
+  grid-template-rows: 1fr;
+  column-gap: 15px;
+  align-content: stretch;
+  justify-content: center;
+  align-items: stretch;
+  justify-items: stretch;
+  margin-left: 40px;
+  margin-right: 10px;
+}
+.section-title {
+  padding: 30px 50px 10px 50px;
+  margin-left: 100px;
+}
+.project {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border: 2px solid #e9ecef;
+}
+.project-table {
+  /* margin: auto;
+  padding: auto; */
+  width: 100%;
+}
+/* thiet lap cac thanh phan du an */
+.project-name {
+  padding: 10px;
+  border-bottom: 2px solid #e9ecef;
+  text-align: center;
+  font-size: 14px;
+}
+/* thiet lap icon va background cho content */
+.project-icon {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  border-bottom: 2px solid #e9ecef;
+}
+.project-icon p:first-child {
+  background-color: #228be6;
+  border-radius: 20%;
+  width: 60px;
+  height: 30px;
+  padding-left: 10px;
+  padding-top: 3px;
+}
+/* thiet lap cho phan table trong khoi du an */
+td {
+  padding: 10px;
+  font-size: 12px;
+  width: 150px;
+
+  border-bottom: 2px solid #e9ecef;
+  /* padding-bottom: 20px; */
+}
+/* Thiet lap cho footer */
+#footer a {
+  color: #bdbaba;
+}
+#footer a:link,
+a:visited {
+  text-decoration: none;
+  font-size: 20px;
+}
+#footer a:hover,
+a:active {
+  font-size: 30px;
+  cursor: pointer;
+  color: orange;
+}
+#footer ul {
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+}
+#footer li {
+  display: inline-block;
+  text-align: center;
+  margin: 0 30px;
+}
+.footer-icon {
+  color: #199cdb;
+  font-size: 30px;
+}

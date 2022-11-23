@@ -1,0 +1,33 @@
+@media only screen and (max-width: 767px) {
+  .user-avatar img {
+    display: none;
+  }
+  #nav-bar {
+    display: block;
+    height: auto;
+  }
+  #nav-bar a:link,
+  a:visited {
+    display: block;
+    padding: 10px;
+    border-left: none;
+    text-align: left;
+  }
+  .container-user .user {
+    margin: 0;
+    padding: 0;
+    display: block;
+  }
+  .cer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  #about,
+  .job-info,
+  .certificate,
+  .certificate-item,
+  .container-pro {
+    grid-template-columns: 1fr;
+  }
+}

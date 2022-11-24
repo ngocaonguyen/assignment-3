@@ -1,0 +1,21 @@
+@media screen and (min-width: 321px) and (max-width: 768px) {
+  .container {
+    width: auto;
+    grid-template-columns: 1fr;
+  }
+  .goal table {
+    margin-left: 10px;
+  }
+  .timeline table {
+    margin-left: 10px;
+  }
+  .primary table {
+    margin-left: 10px;
+  }
+  .grid-container {
+    display: grid;
+  }
+  .charter {
+    width: auto;
+  }
+}
